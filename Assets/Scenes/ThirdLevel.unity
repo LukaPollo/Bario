@@ -15323,8 +15323,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
-    m_Bits: 0
-  m_LayerOverridePriority: 0
 --- !u!1 &1256031475
 GameObject:
   m_ObjectHideFlags: 0
