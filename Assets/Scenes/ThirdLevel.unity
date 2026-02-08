@@ -2436,7 +2436,11 @@ MonoBehaviour:
   spawnPoint: {fileID: 1835001509}
   deathAudio: {fileID: 8300000, guid: 5448dd8e73b94a04d8b00371575a4b8d, type: 3}
   audioSource: {fileID: 344442743}
+<<<<<<< HEAD
   groundCheck: {fileID: 1589477141}
+=======
+  groundCheck: {fileID: 0}
+>>>>>>> 0f462019c188ec5d3b0ed14621791fd56518ee61
   groundCheckRadius: 0.1
 --- !u!50 &344442740
 Rigidbody2D:
@@ -12556,7 +12560,11 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
+<<<<<<< HEAD
   m_Volume: 0.2
+=======
+  m_Volume: 0.05
+>>>>>>> 0f462019c188ec5d3b0ed14621791fd56518ee61
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -20744,3 +20752,11 @@ SceneRoots:
   - {fileID: 857799818}
   - {fileID: 846289422}
   - {fileID: 1835001509}
+<<<<<<< HEAD
+=======
+  - {fileID: 2039274097}
+  - {fileID: 770481655}
+  - {fileID: 185849834}
+  - {fileID: 204524814}
+  - {fileID: 1460502371}
+>>>>>>> 0f462019c188ec5d3b0ed14621791fd56518ee61
