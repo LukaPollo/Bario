@@ -1045,7 +1045,7 @@ Transform:
   m_GameObject: {fileID: 99243004}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 37.04, y: -4.865, z: 0}
+  m_LocalPosition: {x: 34.59, y: -4.865, z: 0}
   m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1109,10 +1109,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebbb803c665f7bd44b80a0ea664a10d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
-  minDistance: 1
-  maxDistance: 3
-  minSpeed: 0.5
-  maxSpeed: 2
+  minDistance: 2.5
+  maxDistance: 2.5
+  minSpeed: 1.5
+  maxSpeed: 1.5
+  direction: 1
 --- !u!95 &99243008
 Animator:
   serializedVersion: 7
@@ -1567,7 +1568,7 @@ Transform:
   m_GameObject: {fileID: 131903828}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 71.2, y: -4.865, z: 0}
+  m_LocalPosition: {x: 72.11, y: -4.865, z: 0}
   m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1631,10 +1632,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebbb803c665f7bd44b80a0ea664a10d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
-  minDistance: 1
-  maxDistance: 3
-  minSpeed: 0.5
-  maxSpeed: 2
+  minDistance: 4.5
+  maxDistance: 4.5
+  minSpeed: 1.5
+  maxSpeed: 1.5
+  direction: -1
 --- !u!95 &131903832
 Animator:
   serializedVersion: 7
@@ -2660,7 +2662,7 @@ Transform:
   m_GameObject: {fileID: 354199194}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 80.2, y: -4.865, z: 0}
+  m_LocalPosition: {x: 83.08, y: -4.865, z: 0}
   m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2724,10 +2726,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebbb803c665f7bd44b80a0ea664a10d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
-  minDistance: 1
-  maxDistance: 3
-  minSpeed: 0.5
-  maxSpeed: 2
+  minDistance: 5.5
+  maxDistance: 5.5
+  minSpeed: 1.5
+  maxSpeed: 1.5
+  direction: -1
 --- !u!95 &354199198
 Animator:
   serializedVersion: 7
@@ -7060,36 +7063,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 18, y: 6, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 5
-      m_TileSpriteIndex: 5
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 19, y: 6, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 5
-      m_TileSpriteIndex: 5
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 20, y: 6, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 5
-      m_TileSpriteIndex: 5
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: 34, y: 6, z: 0}
     second:
       serializedVersion: 2
@@ -8712,7 +8685,7 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 323
+  - m_RefCount: 320
     m_Data: {fileID: 11400000, guid: d0a04d1d13d4cb949aa587191e3a86e8, type: 2}
   - m_RefCount: 256
     m_Data: {fileID: 11400000, guid: ee0dd7947fcdaa54e881fade844d6c75, type: 2}
@@ -8727,12 +8700,12 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 323
+  - m_RefCount: 320
     m_Data: {fileID: -3332869691567337552, guid: fc584d329b77b9545b9c9c8bb829e553, type: 3}
   - m_RefCount: 256
     m_Data: {fileID: 6046465229504819404, guid: fc584d329b77b9545b9c9c8bb829e553, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 579
+  - m_RefCount: 576
     m_Data:
       e00: 1
       e01: 0
@@ -8751,7 +8724,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 579
+  - m_RefCount: 576
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -8993,9 +8966,9 @@ CompositeCollider2D:
       - X: 620000000
         Y: 60000000
     - - X: 210000000
-        Y: 70000000
+        Y: 60000000
       - X: 180000000
-        Y: 70000000
+        Y: 60000000
       - X: 180000000
         Y: 50000000
       - X: 210000000
@@ -9094,10 +9067,6 @@ CompositeCollider2D:
       - {x: 61.99997, y: 7}
       - {x: 58, y: 6.9999704}
       - {x: 58.000034, y: 6}
-    - - {x: 20.999971, y: 5}
-      - {x: 20.999971, y: 7}
-      - {x: 18, y: 6.9999704}
-      - {x: 18.000029, y: 5}
     - - {x: -12.00003, y: 5}
       - {x: -12.00003, y: 6}
       - {x: -16, y: 5.999971}
@@ -9106,6 +9075,10 @@ CompositeCollider2D:
       - {x: 28.999971, y: 6}
       - {x: 23, y: 5.999971}
       - {x: 23.000029, y: 5}
+    - - {x: 20.999971, y: 5}
+      - {x: 20.999971, y: 6}
+      - {x: 18, y: 5.999971}
+      - {x: 18.000029, y: 5}
     - - {x: -18.000029, y: 4}
       - {x: -18.000029, y: 5}
       - {x: -23, y: 4.999971}
@@ -9168,7 +9141,7 @@ Transform:
   m_GameObject: {fileID: 401640122}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 30.57, y: -1.017, z: 0}
+  m_LocalPosition: {x: 30.57, y: -2.0079997, z: 0}
   m_LocalScale: {x: 2, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10979,7 +10952,7 @@ Transform:
   m_GameObject: {fileID: 622902056}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 45.16, y: -4.865, z: 0}
+  m_LocalPosition: {x: 45.08, y: -4.865, z: 0}
   m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11043,10 +11016,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebbb803c665f7bd44b80a0ea664a10d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
-  minDistance: 1
-  maxDistance: 3
-  minSpeed: 0.5
-  maxSpeed: 2
+  minDistance: 4.5
+  maxDistance: 4.5
+  minSpeed: 1.5
+  maxSpeed: 1.5
+  direction: -1
 --- !u!95 &622902060
 Animator:
   serializedVersion: 7
@@ -11948,7 +11922,7 @@ Transform:
   m_GameObject: {fileID: 856073548}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 48.79, y: -4.865, z: 0}
+  m_LocalPosition: {x: 49.07, y: -4.865, z: 0}
   m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12012,10 +11986,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebbb803c665f7bd44b80a0ea664a10d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
-  minDistance: 1
-  maxDistance: 3
-  minSpeed: 0.5
-  maxSpeed: 2
+  minDistance: 3.5
+  maxDistance: 3.5
+  minSpeed: 1.5
+  maxSpeed: 1.5
+  direction: -1
 --- !u!95 &856073552
 Animator:
   serializedVersion: 7
@@ -12562,7 +12537,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.2
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -14943,7 +14918,7 @@ Transform:
   m_GameObject: {fileID: 1178293808}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 30.283, y: -1.0170002, z: 0}
+  m_LocalPosition: {x: 30.283, y: -2.008, z: 0}
   m_LocalScale: {x: 2, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15611,7 +15586,7 @@ Transform:
   m_GameObject: {fileID: 1259352168}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 66.49, y: -4.865, z: 0}
+  m_LocalPosition: {x: 67.08, y: -4.865, z: 0}
   m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15675,10 +15650,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebbb803c665f7bd44b80a0ea664a10d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
-  minDistance: 1
-  maxDistance: 3
-  minSpeed: 0.5
-  maxSpeed: 2
+  minDistance: 3.5
+  maxDistance: 3.5
+  minSpeed: 1.5
+  maxSpeed: 1.5
+  direction: -1
 --- !u!95 &1259352172
 Animator:
   serializedVersion: 7
@@ -16424,7 +16400,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1394933047845754618, guid: 37ca4a95770c6bc4b82f5d37d5217a98, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.54
+      value: 9.62
       objectReference: {fileID: 0}
     - target: {fileID: 4414419775482755316, guid: 37ca4a95770c6bc4b82f5d37d5217a98, type: 3}
       propertyPath: m_Name
@@ -16484,7 +16460,7 @@ Transform:
   m_GameObject: {fileID: 1431045365}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 29.990002, y: -1.0170002, z: 0}
+  m_LocalPosition: {x: 29.990002, y: -2.008, z: 0}
   m_LocalScale: {x: 2, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16900,7 +16876,7 @@ Transform:
   m_GameObject: {fileID: 1510758344}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 41.15, y: -4.865, z: 0}
+  m_LocalPosition: {x: 40.07, y: -4.865, z: 0}
   m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16964,10 +16940,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebbb803c665f7bd44b80a0ea664a10d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
-  minDistance: 1
-  maxDistance: 3
-  minSpeed: 0.5
-  maxSpeed: 2
+  minDistance: 2.5
+  maxDistance: 2.5
+  minSpeed: 1.5
+  maxSpeed: 1.5
+  direction: -1
 --- !u!95 &1510758348
 Animator:
   serializedVersion: 7
@@ -17239,7 +17216,7 @@ Transform:
   m_GameObject: {fileID: 1546570808}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 25.76, y: -4.859, z: 0}
+  m_LocalPosition: {x: 29.08, y: -4.859, z: 0}
   m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17303,10 +17280,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebbb803c665f7bd44b80a0ea664a10d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
-  minDistance: 1
-  maxDistance: 3
-  minSpeed: 0.5
+  minDistance: 5.5
+  maxDistance: 5.5
+  minSpeed: 2
   maxSpeed: 2
+  direction: -1
 --- !u!95 &1546570812
 Animator:
   serializedVersion: 7
@@ -18130,7 +18108,7 @@ Transform:
   m_GameObject: {fileID: 1680110947}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 52.54, y: -4.865, z: 0}
+  m_LocalPosition: {x: 55.09, y: -4.865, z: 0}
   m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18194,10 +18172,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebbb803c665f7bd44b80a0ea664a10d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
-  minDistance: 1
-  maxDistance: 3
-  minSpeed: 0.5
-  maxSpeed: 2
+  minDistance: 5.5
+  maxDistance: 5.5
+  minSpeed: 1.5
+  maxSpeed: 1.5
+  direction: -1
 --- !u!95 &1680110951
 Animator:
   serializedVersion: 7
@@ -18745,7 +18724,7 @@ Transform:
   m_GameObject: {fileID: 1798329196}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 75.68, y: -4.865, z: 0}
+  m_LocalPosition: {x: 77.07, y: -4.865, z: 0}
   m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18809,10 +18788,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebbb803c665f7bd44b80a0ea664a10d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
-  minDistance: 1
-  maxDistance: 3
-  minSpeed: 0.5
-  maxSpeed: 2
+  minDistance: 4.5
+  maxDistance: 4.5
+  minSpeed: 1.5
+  maxSpeed: 1.5
+  direction: -1
 --- !u!95 &1798329200
 Animator:
   serializedVersion: 7
@@ -19368,7 +19348,7 @@ Transform:
   m_GameObject: {fileID: 1903987230}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.47, y: -1.861, z: 0}
+  m_LocalPosition: {x: 5.05, y: -1.861, z: 0}
   m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19432,10 +19412,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebbb803c665f7bd44b80a0ea664a10d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
-  minDistance: 1
-  maxDistance: 3
-  minSpeed: 0.5
-  maxSpeed: 2
+  minDistance: 3.5
+  maxDistance: 3.5
+  minSpeed: 1.5
+  maxSpeed: 1.5
+  direction: -1
 --- !u!95 &1903987234
 Animator:
   serializedVersion: 7
@@ -20179,7 +20160,7 @@ Transform:
   m_GameObject: {fileID: 2009046911}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.05, y: -2.828, z: 0}
+  m_LocalPosition: {x: -0.99, y: -2.828, z: 0}
   m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20197,10 +20178,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebbb803c665f7bd44b80a0ea664a10d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
-  minDistance: 1
-  maxDistance: 3
-  minSpeed: 0.5
-  maxSpeed: 2
+  minDistance: 4.5
+  maxDistance: 4.5
+  minSpeed: 1.5
+  maxSpeed: 1.5
+  direction: -1
 --- !u!61 &2009046916
 BoxCollider2D:
   m_ObjectHideFlags: 0
