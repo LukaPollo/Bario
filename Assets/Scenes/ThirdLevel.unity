@@ -2431,6 +2431,8 @@ MonoBehaviour:
   spawnPoint: {fileID: 1835001509}
   deathAudio: {fileID: 8300000, guid: 5448dd8e73b94a04d8b00371575a4b8d, type: 3}
   audioSource: {fileID: 344442743}
+  groundCheck: {fileID: 0}
+  groundCheckRadius: 0.1
 --- !u!50 &344442740
 Rigidbody2D:
   serializedVersion: 5
@@ -12558,7 +12560,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 0
   Mute: 0
