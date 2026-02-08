@@ -6,39 +6,48 @@ public class AudioController : MonoBehaviour
     public AudioClip[] tracks;
 
     private bool stopAllMusic = false;
-    private int currentTrackIndex = 0;
+    private int currentTrackIndex = -1;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         audiosource = GetComponent<AudioSource>();
-        if (tracks.Length == 0) return;
+
+        if (tracks == null || tracks.Length == 0)
         {
-            PlayTrack();
+            Debug.LogWarning("AudioController: No tracks assigned!");
+            return;
         }
+
+        PlayTrack();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (stopAllMusic) return;
-        if (!audiosource.isPlaying && audiosource.time == 0f)
+        if (tracks == null || tracks.Length == 0) return;
+
+        if (!audiosource.isPlaying)
         {
             NextTrack();
         }
     }
+
     void PlayTrack()
     {
+        if (tracks == null || tracks.Length == 0) return;
+
         currentTrackIndex = Random.Range(0, tracks.Length);
-        stopAllMusic = false;
         audiosource.clip = tracks[currentTrackIndex];
         audiosource.Play();
     }
+
     void NextTrack()
     {
-        currentTrackIndex = Random.Range(0, tracks.Length);
+        if (tracks == null || tracks.Length == 0) return;
+
         PlayTrack();
     }
+
     public void StopMusic()
     {
         audiosource.Stop();

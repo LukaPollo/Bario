@@ -144,7 +144,7 @@ Transform:
   m_GameObject: {fileID: 11326965}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -22.15, y: -1.223, z: 0}
+  m_LocalPosition: {x: -5.11, y: 0.79, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3817,7 +3817,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b94d3ede62059e429f83624819c0ae4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioController
-  audiosource: {fileID: 0}
+  audiosource: {fileID: 886131852}
   tracks:
   - {fileID: 8300000, guid: 55e01f38ab4084f14b8ee0ae8d77b5b4, type: 3}
   - {fileID: 8300000, guid: ea4cb4753ecf7425cae77595ec7d0df6, type: 3}
@@ -4595,11 +4595,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1394933047845754618, guid: 37ca4a95770c6bc4b82f5d37d5217a98, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.05
+      value: -19.09
       objectReference: {fileID: 0}
     - target: {fileID: 1394933047845754618, guid: 37ca4a95770c6bc4b82f5d37d5217a98, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.406
+      value: 5.435
       objectReference: {fileID: 0}
     - target: {fileID: 4414419775482755316, guid: 37ca4a95770c6bc4b82f5d37d5217a98, type: 3}
       propertyPath: m_Name
