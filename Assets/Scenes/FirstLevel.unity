@@ -272,6 +272,7 @@ MonoBehaviour:
   audioSource: {fileID: 344442743}
   groundCheck: {fileID: 1952112917}
   groundCheckRadius: 0.1
+  animator: {fileID: 344442745}
 --- !u!50 &344442740
 Rigidbody2D:
   serializedVersion: 5
@@ -433,6 +434,28 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.32, y: 0.32}
   m_Direction: 0
+--- !u!95 &344442745
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344442736}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 167d076bcf1cf744198d4c1a16d4540d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &374141783
 GameObject:
   m_ObjectHideFlags: 0
@@ -4742,7 +4765,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 3}
-  m_LocalScale: {x: 12, y: 7, z: 1}
+  m_LocalScale: {x: 13.5, y: 6.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 519420032}
@@ -5195,6 +5218,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 259343291368566086, guid: 37ca4a95770c6bc4b82f5d37d5217a98, type: 3}
       insertIndex: -1
       addedObject: {fileID: 344442744}
+    - targetCorrespondingSourceObject: {fileID: 259343291368566086, guid: 37ca4a95770c6bc4b82f5d37d5217a98, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 344442745}
   m_SourcePrefab: {fileID: 100100000, guid: 37ca4a95770c6bc4b82f5d37d5217a98, type: 3}
 --- !u!1 &1538848487
 GameObject:

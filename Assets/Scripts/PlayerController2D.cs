@@ -15,6 +15,7 @@ public class PlayerController2D : MonoBehaviour
 
     private Rigidbody2D rb;
     private bool isGrounded;
+    public Animator animator;
 
     void Start()
     {
@@ -39,6 +40,15 @@ public class PlayerController2D : MonoBehaviour
 
         float moveInput = Input.GetAxisRaw("Horizontal");
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
+
+        if (moveInput != 0) 
+        {
+            animator.SetBool("isRunning", true);
+        }
+        else
+        {
+            animator.SetBool("isRunning", false);
+        }
     }
 
     void CheckGround()

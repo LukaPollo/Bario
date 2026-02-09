@@ -44,6 +44,13 @@ public class VictoryZone : MonoBehaviour
     {
         yield return new WaitForSeconds(5f);
         int currentIndex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(currentIndex + 1);
+        if (currentIndex < 5) 
+        {
+            SceneManager.LoadScene(currentIndex + 1);
+        }
+        if (currentIndex == 5)
+        {
+            SceneManager.LoadScene(6);
+        }
     }
 }
