@@ -18521,11 +18521,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1173916360}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -350, y: 220}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &639529209
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21531,6 +21531,7 @@ MonoBehaviour:
   audioSource: {fileID: 857799821}
   victoryMusic: {fileID: 8300000, guid: ed6ad5b8c238dbc4982eb4b9b463480b, type: 3}
   player: {fileID: 344442739}
+  tokens: {fileID: 0}
   rb: {fileID: 0}
 --- !u!61 &857799820
 BoxCollider2D:
@@ -30722,11 +30723,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1394933047845754618, guid: 37ca4a95770c6bc4b82f5d37d5217a98, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.13
+      value: 13.16
       objectReference: {fileID: 0}
     - target: {fileID: 1394933047845754618, guid: 37ca4a95770c6bc4b82f5d37d5217a98, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.67
+      value: 4.75
       objectReference: {fileID: 0}
     - target: {fileID: 4414419775482755316, guid: 37ca4a95770c6bc4b82f5d37d5217a98, type: 3}
       propertyPath: m_Name

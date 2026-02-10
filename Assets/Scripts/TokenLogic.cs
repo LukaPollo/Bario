@@ -16,12 +16,12 @@ public class TokenLogic : MonoBehaviour
     {
         tokenText.text = "Tokens: " + tokenCount; 
     }
-
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
             tokenCount++;
+            AllTimeTokenCollect.all_time_token_count++;
             UpdateUI();
             //Debug.Log("Token count: " + tokenCount);
 

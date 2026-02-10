@@ -3699,6 +3699,7 @@ MonoBehaviour:
   audioSource: {fileID: 857799821}
   victoryMusic: {fileID: 8300000, guid: ed6ad5b8c238dbc4982eb4b9b463480b, type: 3}
   player: {fileID: 344442739}
+  tokens: {fileID: 0}
   rb: {fileID: 0}
 --- !u!61 &857799820
 BoxCollider2D:
@@ -5127,11 +5128,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 908401399}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -350, y: 230}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &1210132437
 MonoBehaviour:
   m_ObjectHideFlags: 0
