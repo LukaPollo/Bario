@@ -1,18 +1,20 @@
 using UnityEngine;
+using TMPro;
 
 public class TokenLogic : MonoBehaviour
 {
     public static int tokenCount = 0;
     public AudioClip tokenClip;
+    public TMP_Text tokenText;
 
     void Start()
     {
-
+        UpdateUI(); // line 12
     }
 
-    void Update()
+    void UpdateUI()
     {
-
+        tokenText.text = "Tokens: " + tokenCount; 
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -20,7 +22,8 @@ public class TokenLogic : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             tokenCount++;
-            Debug.Log("Token count: " + tokenCount);
+            UpdateUI();
+            //Debug.Log("Token count: " + tokenCount);
 
             if (tokenClip != null)
                 AudioSource.PlayClipAtPoint(tokenClip, transform.position);

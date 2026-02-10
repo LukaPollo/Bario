@@ -8,6 +8,7 @@ public class VictoryZone : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip victoryMusic;
     public PlayerController2D player;
+    public TokenLogic tokens;
     public Rigidbody2D rb;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -28,6 +29,7 @@ public class VictoryZone : MonoBehaviour
         {
             rb = other.GetComponent<Rigidbody2D>();
             player.canMove = false;
+            player.animator.SetBool("isRunning", false);
             rb.linearVelocity = Vector2.zero;
             rb.angularVelocity = 0f;
             rb.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
@@ -47,6 +49,7 @@ public class VictoryZone : MonoBehaviour
         if (currentIndex < 5) 
         {
             SceneManager.LoadScene(currentIndex + 1);
+            TokenLogic.tokenCount = 0;
         }
         if (currentIndex == 5)
         {

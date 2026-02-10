@@ -9,13 +9,13 @@ public class PlayerController2D : MonoBehaviour
     public Transform spawnPoint;
     public AudioClip deathAudio;
     public AudioSource audioSource;
-
+    public Animator animator;
     public Transform groundCheck;
     public float groundCheckRadius = 0.1f;
 
     private Rigidbody2D rb;
     private bool isGrounded;
-    public Animator animator;
+    private bool facingRight = true;
 
     void Start()
     {
@@ -41,6 +41,10 @@ public class PlayerController2D : MonoBehaviour
         float moveInput = Input.GetAxisRaw("Horizontal");
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
 
+        Flip(moveInput);
+
+        animator.SetBool("isRunning", moveInput != 0);
+
         if (moveInput != 0) 
         {
             animator.SetBool("isRunning", true);
@@ -56,6 +60,26 @@ public class PlayerController2D : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
     }
 
+    void Flip(float moveInput)
+    {
+        if (moveInput > 0 && !facingRight)
+        {
+            facingRight = true;
+        }
+        else if (moveInput < 0 && facingRight)
+        {
+            facingRight = false;
+        }
+        else
+        {
+            return;
+        }
+
+        Vector3 scale = transform.localScale;
+        scale.x *= -1;
+        transform.localScale = scale;
+    }
+
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Spike"))
@@ -64,8 +88,4 @@ public class PlayerController2D : MonoBehaviour
             audioSource.PlayOneShot(deathAudio);
         }
     }
-
-    //
-    // 2/9/2026 4:28
-    //
 }
